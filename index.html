@@ -220,6 +220,16 @@
                 x.className = "sidenav";
          }
         }
+        y=document.getElementsByTagName('a');
+    function toggleNav2 () {
+        var z=document.getElementById("mySidenav");
+        if (z.classList.length===2) {
+            z.classList.remove('sidenavWidth');
+        }
+    }
+    for (var i=0; i<5; i++) {
+        y[i].addEventListener('click', toggleNav2);
+    }
         </script>
     
 </body></html>
