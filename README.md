@@ -1,1 +1,1 @@
-# https://xmokax.github.io/
+# https://xmokax.github.io/first-html-template/
