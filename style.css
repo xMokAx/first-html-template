@@ -211,17 +211,23 @@ h4 {
 .sidenav a {
   padding: 8px 8px 8px 35px;
   font-size: 20px;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   display: block;
   color: white;
   border-bottom: 1px solid white;
-  width: 250px;
+  width: 100%;
 }
 
 .sidenav a:hover,
 .sidenav a:focus {
   color: black;
   background-color: #ddd;
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav li {
+    width: 250px;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -239,12 +245,13 @@ h4 {
   .sidenav li {
     display: inline-block;
     float: none;
-    padding: 6px;
+    margin: 8px;
+    max-width: 136;
   }
 
   .sidenav a {
     border: white solid 1px;
-    padding: 15px 25px;
+    padding: 8px 16px;
   }
 }
 
